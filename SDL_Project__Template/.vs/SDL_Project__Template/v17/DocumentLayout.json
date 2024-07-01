@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|solutionrelative:SDL_Project__Template\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|solutionrelative:SDL_Project__Template\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,12 +23,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Source.cpp",
-              "RelativeDocumentMoniker": "SDL_Project__Template\\Source.cpp",
-              "ToolTip": "C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Source.cpp",
-              "RelativeToolTip": "SDL_Project__Template\\Source.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Main.cpp",
+              "RelativeDocumentMoniker": "SDL_Project__Template\\Main.cpp",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Main.cpp",
+              "RelativeToolTip": "SDL_Project__Template\\Main.cpp",
+              "ViewState": "AQIAADMAAAAAAAAAAAAowDYAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-07-01T16:39:12.211Z",
               "EditorCaption": ""
