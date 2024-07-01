@@ -17,6 +17,7 @@ int main(int argc, char* argv[])
 	Game* game{ nullptr };
 	game = new Game;
 	
+	game->Init();
 
 	//game loop
 	while (game->GetRunning())

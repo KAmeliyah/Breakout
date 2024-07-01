@@ -26,19 +26,49 @@ int Game::Init()
 	}
 
 	SDL_RenderSetLogicalSize(rend, 300, 300);
+	SDL_SetRenderDrawColor(rend, 0, 0, 255, 255);
 
 }
 
 void Game::HandleEvents()
 {
+	while (SDL_PollEvent(&e))
+	{
+		switch (e.type)
+		{
+			case SDL_MOUSEBUTTONDOWN:
+			{
+				switch (e.button.button)
+				{
+					case SDL_BUTTON_LEFT:
+					{
+						SetRunning(false);
+						break;
+					}
+					
+
+					default:
+						break;
+				}
+				break;
+			}
+			default:
+				break;
+
+		}
+	}
 }
 
 void Game::Update()
 {
+	
+
 }
 
 void Game::Render()
 {
+	SDL_RenderClear(rend);
+	SDL_RenderPresent(rend);
 }
 
 void Game::Clear()
