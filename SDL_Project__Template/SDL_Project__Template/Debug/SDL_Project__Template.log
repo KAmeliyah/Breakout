@@ -1,3 +1,5 @@
 ﻿  Game.cpp
-C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Game.cpp(33,1): warning C4715: 'Game::Init': not all control paths return a value
+  Main.cpp
+  Paddle.cpp
+  Generating Code...
   SDL_Project__Template.vcxproj -> C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\Debug\SDL_Project__Template.exe

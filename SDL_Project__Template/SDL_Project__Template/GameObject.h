@@ -1,20 +1,32 @@
 #pragma once
+#include <SDL.h>
+#include <iostream>
 
 class GameObject
 {
 protected:
-	int posX{ 0 };
-	int posY{ 0 };
+	int x{ 0 };
+	int y{ 0 };
+	int width{ 0 };
+	int height{ 0 };
+
 	int speed{ 0 };
+
 	bool alive{ false };
+
+	SDL_Texture* spriteTexture;
+	SDL_Rect sRect;
+	SDL_Rect dRect;
 
 public:
 
-	GameObject(int _x, int _y, int _speed);
+	GameObject(const char* _spriteName,int _x, int _y, int _speed, SDL_Renderer* _rend);
+	
+    ~GameObject();
 
-	virtual void Update() =  0;
+	virtual void Update(SDL_Renderer* _rend) =  0;
 
-	virtual void Render() = 0;
+	virtual void Render(SDL_Renderer* _rend) = 0;
 
 	bool GetAlive();
 

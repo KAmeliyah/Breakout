@@ -27,8 +27,13 @@ int Game::Init()
 		return -1;
 	}
 
-	SDL_RenderSetLogicalSize(rend, 300, 300);
+	SDL_GetWindowSize(window, &width, &height);
+	SDL_RenderSetLogicalSize(rend, 600, 750);
 	SDL_SetRenderDrawColor(rend, 0, 0, 0, 255);
+
+	player = new Paddle("./Sprites/Paddle.bmp",0,600,0,rend);
+
+	return 0;
 
 }
 
@@ -38,38 +43,29 @@ void Game::HandleEvents()
 	{
 		switch (e.type)
 		{
-			case SDL_MOUSEBUTTONDOWN:
-			{
-				switch (e.button.button)
-				{
-					case SDL_BUTTON_LEFT:
-					{
-						SetRunning(false);
-						break;
-					}
-					
+			case SDL_QUIT:
+			SetRunning(false);
+			break;
 
-					default:
-						break;
-				}
-				break;
-			}
 			default:
 				break;
 
 		}
+			
 	}
 }
 
 void Game::Update()
 {
-	
+	player->Update(rend);
 
 }
 
 void Game::Render()
 {
 	SDL_RenderClear(rend);
+
+	player->Render(rend);
 	SDL_RenderPresent(rend);
 }
 

@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 #include "GameLevel.h"
+#include "Paddle.h"
 
 enum GameState
 {
@@ -18,8 +19,8 @@ private:
 
 	GameState state;
 
-	unsigned int height{ 0 };
-	unsigned int width{ 0 };
+	int height{ 0 };
+	int width{ 0 };
 
 	SDL_Window* window{ nullptr };
 	SDL_Renderer* rend{ nullptr };
@@ -29,6 +30,8 @@ private:
 
 	//all the levels
 	std::vector <GameLevel> levels;
+
+	Paddle* player{ nullptr };
 
 public:
 
