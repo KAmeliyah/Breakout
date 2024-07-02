@@ -2,6 +2,8 @@
 
 int Game::Init()
 {
+	state = GAME_ACTIVE;
+
 	if (SDL_Init(SDL_INIT_EVERYTHING) != 0)
 	{
 		std::cout << "Failed to initialise SDL: " << SDL_GetError() << std::endl;
@@ -9,7 +11,7 @@ int Game::Init()
 
 	}
 
-	window = SDL_CreateWindow("Play Screen", 100, 100, 300, 300, 0);
+	window = SDL_CreateWindow("Play Screen", 450, 50, 600, 750, 0);
 
 	if (window == nullptr)
 	{
@@ -26,7 +28,7 @@ int Game::Init()
 	}
 
 	SDL_RenderSetLogicalSize(rend, 300, 300);
-	SDL_SetRenderDrawColor(rend, 0, 0, 255, 255);
+	SDL_SetRenderDrawColor(rend, 0, 0, 0, 255);
 
 }
 
