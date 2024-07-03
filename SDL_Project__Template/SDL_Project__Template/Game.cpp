@@ -61,6 +61,18 @@ void Game::Update()
 {
 	player->Update(rend);
 	ball->Update(rend);
+
+	SDL_Rect collision;
+
+	bool coll = SDL_IntersectRect(player->GetRect(), ball->GetRect(), &collision);
+
+	if (coll)
+	{
+		ball->Reverse();
+	}
+	
+
+
 }
 
 void Game::Render()

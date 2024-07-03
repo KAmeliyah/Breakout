@@ -33,6 +33,8 @@ public:
 
 	void SetAlive(bool _alive);
 
+	SDL_Rect* GetRect();
+
 
 };
 

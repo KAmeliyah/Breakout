@@ -43,3 +43,8 @@ void GameObject::SetAlive(bool _alive)
 	alive = _alive;
 }
 
+SDL_Rect* GameObject::GetRect()
+{
+	return &dRect;
+}
+

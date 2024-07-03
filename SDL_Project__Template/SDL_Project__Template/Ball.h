@@ -15,5 +15,7 @@ public:
 	void Update(SDL_Renderer* _rend);
 
 	void Render(SDL_Renderer* _rend);
+
+	void Reverse();
 };
 

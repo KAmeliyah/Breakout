@@ -7,19 +7,27 @@
       "RelativeMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|solutionrelative:SDL_Project__Template\\Ball.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Ball.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|solutionrelative:SDL_Project__Template\\Ball.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|solutionrelative:SDL_Project__Template\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\Documents\\GitHub\\Space-Invaders\\SDL_Project__Template\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Ball.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|solutionrelative:SDL_Project__Template\\Ball.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Vec2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|solutionrelative:SDL_Project__Template\\Vec2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|solutionrelative:SDL_Project__Template\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\GameObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|solutionrelative:SDL_Project__Template\\GameObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\GameObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|solutionrelative:SDL_Project__Template\\GameObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\Documents\\GitHub\\Space-Invaders\\SDL_Project__Template\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Paddle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -28,14 +36,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Paddle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|solutionrelative:SDL_Project__Template\\Paddle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\GameObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|solutionrelative:SDL_Project__Template\\GameObject.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\GameObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|solutionrelative:SDL_Project__Template\\GameObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{73A9A794-86DA-44AD-9654-9351E206C8C9}|SDL_Project__Template\\SDL_Project__Template.vcxproj|C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -61,7 +61,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Enemy.cpp",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\GitHub\\Space-Invaders\\SDL_Project__Template\\Enemy.cpp",
               "RelativeDocumentMoniker": "..\\..\\Space-Invaders\\SDL_Project__Template\\Enemy.cpp",
@@ -69,8 +69,7 @@
               "RelativeToolTip": "..\\..\\Space-Invaders\\SDL_Project__Template\\Enemy.cpp",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-03T15:37:46.326Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-03T15:37:46.326Z"
             },
             {
               "$type": "Document",
@@ -87,13 +86,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Ball.h",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Ball.h",
               "RelativeDocumentMoniker": "SDL_Project__Template\\Ball.h",
               "ToolTip": "C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Ball.h",
               "RelativeToolTip": "SDL_Project__Template\\Ball.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-07-03T14:57:31.333Z",
               "EditorCaption": ""
@@ -106,7 +105,7 @@
               "RelativeDocumentMoniker": "SDL_Project__Template\\Ball.cpp",
               "ToolTip": "C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Ball.cpp",
               "RelativeToolTip": "SDL_Project__Template\\Ball.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAPAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-07-03T14:57:33.249Z",
               "EditorCaption": ""
@@ -121,8 +120,7 @@
               "RelativeToolTip": "SDL_Project__Template\\Main.cpp",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-01T16:39:12.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-01T16:39:12.211Z"
             },
             {
               "$type": "Document",
@@ -134,51 +132,50 @@
               "RelativeToolTip": "SDL_Project__Template\\Game.h",
               "ViewState": "AQIAABsAAAAAAAAAAAAAACQAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-01T18:15:36.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-01T18:15:36.64Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Game.cpp",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Game.cpp",
               "RelativeDocumentMoniker": "SDL_Project__Template\\Game.cpp",
               "ToolTip": "C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Game.cpp",
               "RelativeToolTip": "SDL_Project__Template\\Game.cpp",
-              "ViewState": "AQIAAA8AAAAAAAAAAAD4vz4AAAAUAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAD4v0YAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-07-01T18:30:59.175Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "GameObject.h",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\GameObject.h",
               "RelativeDocumentMoniker": "SDL_Project__Template\\GameObject.h",
               "ToolTip": "C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\GameObject.h",
               "RelativeToolTip": "SDL_Project__Template\\GameObject.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACMAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-07-01T19:16:37.825Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "GameObject.cpp",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\GameObject.cpp",
               "RelativeDocumentMoniker": "SDL_Project__Template\\GameObject.cpp",
               "ToolTip": "C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\GameObject.cpp",
               "RelativeToolTip": "SDL_Project__Template\\GameObject.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAATAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAD4vy4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-07-01T19:20:11.913Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Paddle.h",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Paddle.h",
               "RelativeDocumentMoniker": "SDL_Project__Template\\Paddle.h",
@@ -186,12 +183,11 @@
               "RelativeToolTip": "SDL_Project__Template\\Paddle.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-01T19:30:24.207Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-01T19:30:24.207Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Paddle.cpp",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Paddle.cpp",
               "RelativeDocumentMoniker": "SDL_Project__Template\\Paddle.cpp",
@@ -199,8 +195,7 @@
               "RelativeToolTip": "SDL_Project__Template\\Paddle.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-02T19:57:32.737Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T19:57:32.737Z"
             }
           ]
         }
