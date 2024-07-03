@@ -4,7 +4,20 @@ void Paddle::Update(SDL_Renderer* _rend)
 {
 
 	SDL_GetMouseState(&x,NULL);
-	dRect.x = x - 50;
+
+	if (x < 50)
+	{
+		dRect.x = 0;
+	}
+	else if (x > 550)
+	{
+		dRect.x = 500;
+	}
+	else
+	{
+		dRect.x = x - 50;
+	}
+	
 	
 
 

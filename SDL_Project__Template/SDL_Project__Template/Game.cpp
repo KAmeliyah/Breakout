@@ -31,7 +31,7 @@ int Game::Init()
 	SDL_RenderSetLogicalSize(rend, 600, 750);
 	SDL_SetRenderDrawColor(rend, 0, 0, 0, 255);
 
-	player = new Paddle("./Sprites/Paddle.bmp",0,600,0,rend);
+	player = new Paddle("./Sprites/Paddle.bmp",0,675,0,rend);
 
 	return 0;
 
