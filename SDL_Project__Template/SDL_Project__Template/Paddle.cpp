@@ -2,25 +2,25 @@
 
 void Paddle::Update(SDL_Renderer* _rend)
 {
-
+	int x;
 	SDL_GetMouseState(&x,NULL);
 
 	if (x < 50)
 	{
-		dRect.x = 0;
+		pos.x = 0;
+		
 	}
 	else if (x > 550)
 	{
-		dRect.x = 500;
+
+		pos.x = 500;
 	}
 	else
 	{
-		dRect.x = x - 50;
+		pos.x = x - 50;
 	}
-	
-	
 
-
+	dRect.x = pos.x;
 
 }
 

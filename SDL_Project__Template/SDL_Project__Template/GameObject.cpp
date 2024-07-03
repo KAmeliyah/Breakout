@@ -3,8 +3,8 @@
 
 GameObject::GameObject(const char* _spriteName, int _x, int _y, int _speed, SDL_Renderer* _rend)
 {
-	x = _x;
-	y = _y;
+	pos.x = _x;
+	pos.y = _y;
 	speed = _speed;
 
 	alive = true;

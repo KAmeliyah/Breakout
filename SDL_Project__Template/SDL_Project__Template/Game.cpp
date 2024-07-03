@@ -31,7 +31,9 @@ int Game::Init()
 	SDL_RenderSetLogicalSize(rend, 600, 750);
 	SDL_SetRenderDrawColor(rend, 0, 0, 0, 255);
 
-	player = new Paddle("./Sprites/Paddle.bmp",0,675,0,rend);
+	player = new Paddle("./Sprites/Paddle.bmp",250,675,0,rend);
+	ball = new Ball("./Sprites/Ball.bmp", 250, 625, 0, rend);
+
 
 	return 0;
 
@@ -58,7 +60,7 @@ void Game::HandleEvents()
 void Game::Update()
 {
 	player->Update(rend);
-
+	ball->Update(rend);
 }
 
 void Game::Render()
@@ -66,12 +68,17 @@ void Game::Render()
 	SDL_RenderClear(rend);
 
 	player->Render(rend);
+	ball->Render(rend);
 	SDL_RenderPresent(rend);
 }
 
 void Game::Clear()
 {
 	SDL_Quit();
+}
+
+void Game::ChangeLevel()
+{
 }
 
 void Game::SetRunning(bool _running)

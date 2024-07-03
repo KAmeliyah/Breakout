@@ -1,12 +1,13 @@
 #pragma once
 #include <SDL.h>
 #include <iostream>
+#include "Vec2D.h"
 
 class GameObject
 {
 protected:
-	int x{ 0 };
-	int y{ 0 };
+
+	Vec2D pos;
 	int width{ 0 };
 	int height{ 0 };
 

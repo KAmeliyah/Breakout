@@ -5,6 +5,8 @@
 #include <vector>
 #include "GameLevel.h"
 #include "Paddle.h"
+#include "Ball.h"
+
 
 enum GameState
 {
@@ -32,6 +34,8 @@ private:
 	std::vector <GameLevel> levels;
 
 	Paddle* player{ nullptr };
+	Ball* ball{ nullptr };
+	
 
 public:
 
@@ -44,6 +48,8 @@ public:
 	void Render();
 
 	void Clear();
+
+	void ChangeLevel();
 
 	void SetRunning(bool _running);
 
