@@ -59,16 +59,22 @@ void Game::HandleEvents()
 
 void Game::Update()
 {
+	if (!ball->GetAlive())
+	{
+		SetRunning(false);
+		std::cout << "You lost" << std::endl;
+	}
+
 	player->Update(rend);
 	ball->Update(rend);
 
 	SDL_Rect collision;
 
-	bool coll = SDL_IntersectRect(player->GetRect(), ball->GetRect(), &collision);
+	bool pColl = SDL_IntersectRect(player->GetRect(), ball->GetRect(), &collision);
 
-	if (coll)
+	if (pColl)
 	{
-		ball->Reverse();
+		ball->Reverse(player->GetRect());
 	}
 	
 

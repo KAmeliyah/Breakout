@@ -1,10 +1,10 @@
 ﻿  Ball.cpp
-C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Ball.h(11,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Ball.h(13,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
   (compiling source file 'Ball.cpp')
   
-C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Ball.h(12,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Ball.h(14,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
   (compiling source file 'Ball.cpp')
   
-C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Ball.cpp(15,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Ball.cpp(16,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Ball.cpp(33,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Ball.cpp(34,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
   SDL_Project__Template.vcxproj -> C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\Debug\SDL_Project__Template.exe
