@@ -55,9 +55,9 @@ void GameLevel::InitLevel(SDL_Renderer* _rend)
 			if (type != 0)
 			{
 				
-				//Block block(blockType[type], 0, 0, 0, _rend);
+				blocks.push_back(Block(blockType[type], 0, 0, 0, _rend));
 
-				// **** fix this ******
+				
 			}
 
 		}
