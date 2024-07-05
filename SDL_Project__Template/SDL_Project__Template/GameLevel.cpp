@@ -25,12 +25,14 @@ void GameLevel::LoadLevel(const char* file)
 
 	if (fstream)
 	{
+		std::cout << "Reading file" << std::endl;
 		while (std::getline(fstream, line))
 		{
 			std::istringstream sstream(line);
 			std::vector <int> row;
 			while (sstream >> tile)
 			{
+				
 				row.push_back(tile);
 			}
 			blockData.push_back(row);
@@ -55,7 +57,7 @@ void GameLevel::InitLevel(SDL_Renderer* _rend)
 			if (type != 0)
 			{
 				
-				blocks.push_back(Block(blockType[type], 0, 0, 0, _rend));
+				blocks.push_back(Block(blockType[type],x * 50, 50 + y * 30, 0, _rend));
 
 				
 			}
@@ -64,10 +66,37 @@ void GameLevel::InitLevel(SDL_Renderer* _rend)
 	}
 }
 
-void GameLevel::Update()
+void GameLevel::Update(SDL_Rect* _ballRect)
 {
+	for (int i = 0; i < blocks.size(); i++)
+	{
+		if (SDL_HasIntersection(_ballRect, blocks[i].GetRect()))
+		{
+			blocks[i].SetAlive(false);
+			
+		}
+	}
+
+	//errors have arisen from trying to remove blocks
+
+	/*for (int i = 0; i < blocks.size(); i++)
+	{
+		if (!blocks[i].GetAlive())
+		{
+			blocks.erase(std::remove(blocks.begin(), blocks.end(), blocks[i]));
+		}
+		
+	}*/
+
+
 }
 
-void GameLevel::Render()
+void GameLevel::Render(SDL_Renderer* _rend)
 {
+
+	for (int i = 0; i < blocks.size(); i++)
+	{
+		blocks[i].Render(_rend);
+	}
+
 }

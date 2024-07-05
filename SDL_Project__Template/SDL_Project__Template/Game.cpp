@@ -31,6 +31,13 @@ int Game::Init()
 	SDL_RenderSetLogicalSize(rend, 600, 750);
 	SDL_SetRenderDrawColor(rend, 0, 0, 0, 255);
 
+	fileNames.push_back("Level1.txt");
+
+	GameLevel level1;
+	level1.LoadLevel(fileNames[0]);
+	level1.InitLevel(rend);
+	levels.push_back(level1);
+
 	player = new Paddle("./Sprites/Paddle.bmp",250,675,0,rend);
 	ball = new Ball("./Sprites/Ball.bmp", 250, 625, 0, rend);
 
@@ -67,6 +74,7 @@ void Game::Update()
 
 	player->Update(rend);
 	ball->Update(rend);
+	levels[0].Update(ball->GetRect());
 
 	SDL_Rect collision;
 
@@ -87,6 +95,7 @@ void Game::Render()
 
 	player->Render(rend);
 	ball->Render(rend);
+	levels[0].Render(rend);
 	SDL_RenderPresent(rend);
 }
 

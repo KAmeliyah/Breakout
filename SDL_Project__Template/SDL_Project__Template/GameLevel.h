@@ -28,8 +28,8 @@ public:
 
 	void InitLevel(SDL_Renderer* _rend);
 
-	void Update();
-	void Render();
+	void Update(SDL_Rect* _ballRect);
+	void Render(SDL_Renderer* _rend);
 
 	
 

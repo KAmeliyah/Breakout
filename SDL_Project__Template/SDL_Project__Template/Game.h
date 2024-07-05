@@ -31,6 +31,7 @@ private:
 	bool running = true;
 
 	//all the levels
+	std::vector < const char* > fileNames;
 	std::vector <GameLevel> levels;
 
 	Paddle* player{ nullptr };
