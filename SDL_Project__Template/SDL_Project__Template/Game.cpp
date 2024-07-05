@@ -74,7 +74,7 @@ void Game::Update()
 
 	player->Update(rend);
 	ball->Update(rend);
-	levels[0].Update(ball->GetRect());
+	levels[0].Update(ball);
 
 	SDL_Rect collision;
 

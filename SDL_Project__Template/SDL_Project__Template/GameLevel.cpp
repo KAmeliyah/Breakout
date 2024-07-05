@@ -56,8 +56,9 @@ void GameLevel::InitLevel(SDL_Renderer* _rend)
 
 			if (type != 0)
 			{
-				
-				blocks.push_back(Block(blockType[type],x * 50, 50 + y * 30, 0, _rend));
+				Block* block = { nullptr };
+				block = new Block(blockType[type], x * 50, 50 + y * 30, 0, _rend);
+				blocks.push_back(block);
 
 				
 			}
@@ -66,27 +67,30 @@ void GameLevel::InitLevel(SDL_Renderer* _rend)
 	}
 }
 
-void GameLevel::Update(SDL_Rect* _ballRect)
+void GameLevel::Update(Ball* _ball)
 {
 	for (int i = 0; i < blocks.size(); i++)
 	{
-		if (SDL_HasIntersection(_ballRect, blocks[i].GetRect()))
+		if (SDL_HasIntersection(_ball->GetRect(), blocks[i]->GetRect()))
 		{
-			blocks[i].SetAlive(false);
+			blocks[i]->SetAlive(false);
+			_ball->Reverse(blocks[i]->GetRect());
 			
 		}
 	}
 
 	//errors have arisen from trying to remove blocks
 
-	/*for (int i = 0; i < blocks.size(); i++)
+	for (int i = 0; i < blocks.size(); i++)
 	{
-		if (!blocks[i].GetAlive())
+		if (!blocks[i]->GetAlive())
 		{
-			blocks.erase(std::remove(blocks.begin(), blocks.end(), blocks[i]));
+			delete blocks[i];
+			blocks[i] = nullptr;
 		}
 		
-	}*/
+	}
+	blocks.erase(std::remove(blocks.begin(), blocks.end(), nullptr), blocks.end());
 
 
 }
@@ -96,7 +100,7 @@ void GameLevel::Render(SDL_Renderer* _rend)
 
 	for (int i = 0; i < blocks.size(); i++)
 	{
-		blocks[i].Render(_rend);
+		blocks[i]->Render(_rend);
 	}
 
 }

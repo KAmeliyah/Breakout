@@ -6,10 +6,11 @@
 #include <map>
 
 #include "Block.h"
+#include "Ball.h"
 class GameLevel
 {
 private:
-	std::vector <Block> blocks;
+	std::vector <Block*> blocks;
 
 	std::vector <std::vector <int>> blockData;
 
@@ -28,7 +29,7 @@ public:
 
 	void InitLevel(SDL_Renderer* _rend);
 
-	void Update(SDL_Rect* _ballRect);
+	void Update(Ball* _ball);
 	void Render(SDL_Renderer* _rend);
 
 	
