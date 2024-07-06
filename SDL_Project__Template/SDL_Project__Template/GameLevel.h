@@ -32,6 +32,14 @@ public:
 	void Update(Ball* _ball);
 	void Render(SDL_Renderer* _rend);
 
+	void SetActive(bool _active);
+
+	bool GetActive();
+
+	void SetCompleted(bool _completed);
+
+	bool GetCompleted();
+
 	
 
 

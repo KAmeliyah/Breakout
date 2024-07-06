@@ -32,6 +32,7 @@ int Game::Init()
 	SDL_SetRenderDrawColor(rend, 0, 0, 0, 255);
 
 	fileNames.push_back("Level1.txt");
+	fileNames.push_back("Level2.txt");
 
 	GameLevel level1;
 	level1.LoadLevel(fileNames[0]);
@@ -74,7 +75,8 @@ void Game::Update()
 
 	player->Update(rend);
 	ball->Update(rend);
-	levels[0].Update(ball);
+
+	levels.back().Update(ball);
 
 	SDL_Rect collision;
 
@@ -95,7 +97,7 @@ void Game::Render()
 
 	player->Render(rend);
 	ball->Render(rend);
-	levels[0].Render(rend);
+	levels.back().Render(rend);
 	SDL_RenderPresent(rend);
 }
 

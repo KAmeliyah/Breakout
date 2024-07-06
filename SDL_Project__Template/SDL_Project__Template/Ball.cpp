@@ -44,13 +44,15 @@ void Ball::Reverse(SDL_Rect* coll)
 	//calculate angle of entry to figure out angle of exit and normalise to get the vector
 	//figure out what needs to be reversed
 	
-	double reverseAngle = (pos.x - coll->x) / coll->w;
+	double reverseAngle = ((pos.x + 12.5) - (coll->x + 50)) / 100;
 
+	
 	moveVec.x = reverseAngle;
+
 	moveVec.y *= -1;
 
 	moveVec.Normalise();
-
+	
 }
 
 int Ball::GetLives()

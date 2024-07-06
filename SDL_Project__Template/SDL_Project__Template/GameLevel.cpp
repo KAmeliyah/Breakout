@@ -8,6 +8,9 @@ GameLevel::GameLevel()
 	blockType[4] = "./Sprites/RedBlock.bmp";
 	blockType[5] = "./Sprites/YellowBlock.bmp";
 
+	active = true;
+	IsCompleted = false;
+
 }
 
 GameLevel::~GameLevel()
@@ -69,27 +72,23 @@ void GameLevel::InitLevel(SDL_Renderer* _rend)
 
 void GameLevel::Update(Ball* _ball)
 {
+	if (blocks.empty())
+	{
+		
+	}
+
 	for (int i = 0; i < blocks.size(); i++)
 	{
 		if (SDL_HasIntersection(_ball->GetRect(), blocks[i]->GetRect()))
 		{
-			blocks[i]->SetAlive(false);
 			_ball->Reverse(blocks[i]->GetRect());
+			blocks[i]->SetAlive(false);
+			delete blocks[i];
+			blocks[i] = nullptr;
 			
 		}
 	}
 
-	//errors have arisen from trying to remove blocks
-
-	for (int i = 0; i < blocks.size(); i++)
-	{
-		if (!blocks[i]->GetAlive())
-		{
-			delete blocks[i];
-			blocks[i] = nullptr;
-		}
-		
-	}
 	blocks.erase(std::remove(blocks.begin(), blocks.end(), nullptr), blocks.end());
 
 
@@ -103,4 +102,24 @@ void GameLevel::Render(SDL_Renderer* _rend)
 		blocks[i]->Render(_rend);
 	}
 
+}
+
+void GameLevel::SetActive(bool _active)
+{
+	active = _active;
+}
+
+bool GameLevel::GetActive()
+{
+	return active;
+}
+
+void GameLevel::SetCompleted(bool _completed)
+{
+	IsCompleted = _completed;
+}
+
+bool GameLevel::GetCompleted()
+{
+	return IsCompleted;
 }
