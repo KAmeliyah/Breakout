@@ -34,11 +34,17 @@ int Game::Init()
 	fileNames.push_back("Level1.txt");
 	fileNames.push_back("Level2.txt");
 	fileNames.push_back("test.txt");
+	fileNames.push_back("test2.txt");
 
 	GameLevel level1;
-	level1.LoadLevel(fileNames[2]);
+	level1.LoadLevel(fileNames[1]);
 	level1.InitLevel(rend);
 	levels.push_back(level1);
+	
+	GameLevel level2;
+	level2.LoadLevel(fileNames[0]);
+	level2.InitLevel(rend);
+	levels.push_back(level2);
 
 	player = new Paddle("./Sprites/Paddle.bmp",250,675,0,rend);
 	ball = new Ball("./Sprites/Ball.bmp", 250, 625, 0, rend);
