@@ -28,7 +28,7 @@ void GameLevel::LoadLevel(const char* file)
 
 	if (fstream)
 	{
-		std::cout << "Reading file" << std::endl;
+		
 		while (std::getline(fstream, line))
 		{
 			std::istringstream sstream(line);
@@ -74,7 +74,7 @@ void GameLevel::Update(Ball* _ball)
 {
 	if (blocks.empty())
 	{
-		
+		SetCompleted(true);
 	}
 
 	for (int i = 0; i < blocks.size(); i++)

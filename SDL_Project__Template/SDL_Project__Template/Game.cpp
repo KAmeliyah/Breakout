@@ -33,9 +33,10 @@ int Game::Init()
 
 	fileNames.push_back("Level1.txt");
 	fileNames.push_back("Level2.txt");
+	fileNames.push_back("test.txt");
 
 	GameLevel level1;
-	level1.LoadLevel(fileNames[0]);
+	level1.LoadLevel(fileNames[2]);
 	level1.InitLevel(rend);
 	levels.push_back(level1);
 
@@ -67,25 +68,41 @@ void Game::HandleEvents()
 
 void Game::Update()
 {
-	if (!ball->GetAlive())
+
+
+	if (levels.empty())
 	{
+		std::cout << "You win" << std::endl;
 		SetRunning(false);
-		std::cout << "You lost" << std::endl;
+
 	}
-
-	player->Update(rend);
-	ball->Update(rend);
-
-	levels.back().Update(ball);
-
-	SDL_Rect collision;
-
-	bool pColl = SDL_IntersectRect(player->GetRect(), ball->GetRect(), &collision);
-
-	if (pColl)
+	else
 	{
-		ball->Reverse(player->GetRect());
+		if (!ball->GetAlive())
+		{
+			SetRunning(false);
+			std::cout << "You lost" << std::endl;
+		}
+		player->Update(rend);
+		ball->Update(rend);
+		levels.back().Update(ball);
+
+		SDL_Rect collision;
+
+		bool pColl = SDL_IntersectRect(player->GetRect(), ball->GetRect(), &collision);
+
+		if (pColl)
+		{
+			ball->Reverse(player->GetRect());
+		}
+
+		if (levels.back().GetCompleted())
+		{
+			levels.pop_back();
+		}
 	}
+
+	
 	
 
 
@@ -97,7 +114,14 @@ void Game::Render()
 
 	player->Render(rend);
 	ball->Render(rend);
-	levels.back().Render(rend);
+
+	if (!levels.empty())
+	{
+		levels.back().Render(rend);
+	}
+	
+
+
 	SDL_RenderPresent(rend);
 }
 
