@@ -11,6 +11,8 @@ GameLevel::GameLevel()
 	active = true;
 	IsCompleted = false;
 
+
+
 }
 
 GameLevel::~GameLevel()
@@ -70,7 +72,7 @@ void GameLevel::InitLevel(SDL_Renderer* _rend)
 	}
 }
 
-void GameLevel::Update(Ball* _ball)
+void GameLevel::Update(Ball* _ball, Mix_Chunk* _hit)
 {
 	if (blocks.empty())
 	{
@@ -82,6 +84,7 @@ void GameLevel::Update(Ball* _ball)
 		if (SDL_HasIntersection(_ball->GetRect(), blocks[i]->GetRect()))
 		{
 			_ball->Reverse(blocks[i]->GetRect());
+			Mix_PlayChannel(-1, _hit, 0);
 			blocks[i]->SetAlive(false);
 			delete blocks[i];
 			blocks[i] = nullptr;

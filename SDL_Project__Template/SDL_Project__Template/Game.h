@@ -6,7 +6,8 @@
 #include "GameLevel.h"
 #include "Paddle.h"
 #include "Ball.h"
-
+#include <SDL_mixer.h>
+#include <SDL_ttf.h>
 
 enum GameState
 {
@@ -36,6 +37,8 @@ private:
 
 	Paddle* player{ nullptr };
 	Ball* ball{ nullptr };
+
+	Mix_Chunk* hitSFX{ nullptr };
 	
 
 public:

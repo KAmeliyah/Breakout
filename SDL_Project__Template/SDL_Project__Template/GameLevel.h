@@ -4,6 +4,7 @@
 #include <fstream>
 #include <sstream>
 #include <map>
+#include <SDL_mixer.h>
 
 #include "Block.h"
 #include "Ball.h"
@@ -29,7 +30,7 @@ public:
 
 	void InitLevel(SDL_Renderer* _rend);
 
-	void Update(Ball* _ball);
+	void Update(Ball* _ball, Mix_Chunk* _hit);
 	void Render(SDL_Renderer* _rend);
 
 	void SetActive(bool _active);

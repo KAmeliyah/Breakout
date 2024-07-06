@@ -27,6 +27,19 @@ int Game::Init()
 		return -1;
 	}
 
+	if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 1024) != 0)
+	{
+		std::cout << "Failed to open audio:" << Mix_GetError();
+		return -1;
+	}
+
+	
+	if (TTF_Init() < 0)
+	{
+		std::cout << "Error initialising SDL_ttf" << TTF_GetError() << std::endl;
+		return -1;
+	}
+
 	SDL_GetWindowSize(window, &width, &height);
 	SDL_RenderSetLogicalSize(rend, 600, 750);
 	SDL_SetRenderDrawColor(rend, 0, 0, 0, 255);
@@ -45,6 +58,14 @@ int Game::Init()
 	level2.LoadLevel(fileNames[0]);
 	level2.InitLevel(rend);
 	levels.push_back(level2);
+
+	
+	hitSFX = Mix_LoadWAV("./Sounds/hit.wav");
+
+	if (!hitSFX)
+	{
+		std::cout << "Failed to load SFX: " << Mix_GetError() << std::endl;
+	}
 
 	player = new Paddle("./Sprites/Paddle.bmp",250,675,0,rend);
 	ball = new Ball("./Sprites/Ball.bmp", 250, 625, 0, rend);
@@ -91,7 +112,7 @@ void Game::Update()
 		}
 		player->Update(rend);
 		ball->Update(rend);
-		levels.back().Update(ball);
+		levels.back().Update(ball, hitSFX);
 
 		SDL_Rect collision;
 
@@ -100,11 +121,13 @@ void Game::Update()
 		if (pColl)
 		{
 			ball->Reverse(player->GetRect());
+			Mix_PlayChannel(-1, hitSFX, 0);
 		}
 
 		if (levels.back().GetCompleted())
 		{
 			levels.pop_back();
+			ball->Reset();
 		}
 	}
 
@@ -133,6 +156,7 @@ void Game::Render()
 
 void Game::Clear()
 {
+	Mix_FreeChunk(hitSFX);
 	SDL_Quit();
 }
 
