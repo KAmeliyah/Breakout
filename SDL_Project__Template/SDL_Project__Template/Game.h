@@ -6,8 +6,9 @@
 #include "GameLevel.h"
 #include "Paddle.h"
 #include "Ball.h"
+#include "Text.h"
 #include <SDL_mixer.h>
-#include <SDL_ttf.h>
+
 
 enum GameState
 {
@@ -40,6 +41,10 @@ private:
 
 	Mix_Chunk* hitSFX{ nullptr };
 	
+	
+	TTF_Font* font{ nullptr };
+	Text* score{ nullptr };
+
 
 public:
 
@@ -52,8 +57,6 @@ public:
 	void Render();
 
 	void Clear();
-
-	void ChangeLevel();
 
 	void SetRunning(bool _running);
 

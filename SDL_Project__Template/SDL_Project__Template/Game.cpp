@@ -67,6 +67,15 @@ int Game::Init()
 		std::cout << "Failed to load SFX: " << Mix_GetError() << std::endl;
 	}
 
+	font = TTF_OpenFont("Anton.ttf", 36);
+	if (!font)
+	{
+		std::cout << "Failed to open font " << TTF_GetError() << std::endl;
+		return -1;
+	}
+
+	score = new Text(0, "Score: ", rend, font, 0, 0);
+
 	player = new Paddle("./Sprites/Paddle.bmp",250,675,0,rend);
 	ball = new Ball("./Sprites/Ball.bmp", 250, 625, 0, rend);
 
@@ -112,7 +121,7 @@ void Game::Update()
 		}
 		player->Update(rend);
 		ball->Update(rend);
-		levels.back().Update(ball, hitSFX);
+		levels.back().Update(ball, hitSFX,score);
 
 		SDL_Rect collision;
 
@@ -149,7 +158,7 @@ void Game::Render()
 		levels.back().Render(rend);
 	}
 	
-
+	score->Render();
 
 	SDL_RenderPresent(rend);
 }
@@ -160,9 +169,6 @@ void Game::Clear()
 	SDL_Quit();
 }
 
-void Game::ChangeLevel()
-{
-}
 
 void Game::SetRunning(bool _running)
 {
