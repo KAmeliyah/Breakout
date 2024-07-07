@@ -12,8 +12,9 @@
 
 enum GameState
 {
+	GAME_TITLE,
 	GAME_ACTIVE,
-	GAME_MENU,
+	GAME_PAUSE,
 	GAME_WIN
 };
 
@@ -41,9 +42,17 @@ private:
 
 	Mix_Chunk* hitSFX{ nullptr };
 	
-	
 	TTF_Font* font{ nullptr };
 	Text* score{ nullptr };
+
+	SDL_Texture* titleScreen;
+	SDL_Rect titleSRect;
+	SDL_Rect titleDRect;
+
+	SDL_Texture* pause;
+	SDL_Rect pauseSRect;
+	SDL_Rect pauseDRect;
+
 
 
 public:
