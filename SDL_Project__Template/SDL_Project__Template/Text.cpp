@@ -12,7 +12,7 @@ Text::Text(SDL_Renderer* _rend, TTF_Font* _font, int _x, int _y)
 
 	//unwrapped to prevent distortion
 	//creating the surface
-	SDL_Surface* text = TTF_RenderText_Solid_Wrapped(font, score.c_str(), color, 0);
+	text = TTF_RenderText_Solid_Wrapped(font, score.c_str(), color, 0);
 
 	//error checking
 	if (!text)
@@ -42,7 +42,7 @@ Text::Text(int _value, SDL_Renderer* _rend, TTF_Font* _font, int _x, int _y)
 
 	//unwrapped to prevent distortion
 	//creating the surface
-	SDL_Surface* text = TTF_RenderText_Solid_Wrapped(font, score.c_str(), color, 0);
+	text = TTF_RenderText_Solid_Wrapped(font, score.c_str(), color, 0);
 
 	//error checking
 	if (!text)
@@ -68,7 +68,7 @@ Text::Text(const char* _text, SDL_Renderer* _rend, TTF_Font* _font, int _x, int 
 	
 
 	//unwrapped to prevent distortion
-	SDL_Surface* text = TTF_RenderText_Solid_Wrapped(font, _text, color, 0);
+	text = TTF_RenderText_Solid_Wrapped(font, _text, color, 0);
 	if (!text)
 	{
 		std::cout << "Failed to render text: " << TTF_GetError() << std::endl;
@@ -95,7 +95,7 @@ Text::Text(int _value, const char* _text, SDL_Renderer* _rend, TTF_Font* _font, 
 	scoreText += score;
 
 	//unwrapped to prevent distortion
-	SDL_Surface* text = TTF_RenderText_Solid_Wrapped(font, scoreText.c_str(), color, 0);
+	text = TTF_RenderText_Solid_Wrapped(font, scoreText.c_str(), color, 0);
 	if (!text)
 	{
 		std::cout << "Failed to render text: " << TTF_GetError() << std::endl;
@@ -116,7 +116,7 @@ Text::Text(std::string _text, SDL_Renderer* _rend, TTF_Font* _font, int _x, int 
 
 
 	//unwrapped to prevent distortion
-	SDL_Surface* text = TTF_RenderText_Solid_Wrapped(font, _text.c_str(), color, 0);
+	text = TTF_RenderText_Solid_Wrapped(font, _text.c_str(), color, 0);
 	if (!text)
 	{
 		std::cout << "Failed to render text: " << TTF_GetError() << std::endl;
@@ -138,7 +138,7 @@ Text::Text(int _value, std::string _text, SDL_Renderer* _rend, TTF_Font* _font, 
 
 
 	//unwrapped to prevent distortion
-	SDL_Surface* text = TTF_RenderText_Solid_Wrapped(font, _text.c_str(), color, 0);
+	text = TTF_RenderText_Solid_Wrapped(font, _text.c_str(), color, 0);
 	if (!text)
 	{
 		std::cout << "Failed to render text: " << TTF_GetError() << std::endl;
@@ -159,7 +159,7 @@ void Text::Update()
 	if (changed)
 	{
 		std::string score = std::to_string(value);
-		SDL_Surface* text = TTF_RenderText_Solid_Wrapped(font, score.c_str(), color, 0);
+		text = TTF_RenderText_Solid_Wrapped(font, score.c_str(), color, 0);
 
 		if (!text)
 		{

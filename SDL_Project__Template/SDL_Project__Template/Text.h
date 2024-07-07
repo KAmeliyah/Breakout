@@ -15,7 +15,7 @@ protected:
 
 	TTF_Font* font;
 	SDL_Renderer* rend;
-	
+	SDL_Surface* text;
 	SDL_Texture* textTexture{ nullptr };
 
 	SDL_Color color = { 255,255,255 };

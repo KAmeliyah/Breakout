@@ -74,7 +74,7 @@ int Game::Init()
 		return -1;
 	}
 
-	score = new Text(0, "Score: ", rend, font, 0, 0);
+	score = new Text(0, rend, font, 0, 0);
 
 	player = new Paddle("./Sprites/Paddle.bmp",250,675,0,rend);
 	ball = new Ball("./Sprites/Ball.bmp", 250, 625, 0, rend);
@@ -141,7 +141,7 @@ void Game::Update()
 	}
 
 	
-	
+	score->Update();
 
 
 }

@@ -86,6 +86,7 @@ void GameLevel::Update(Ball* _ball, Mix_Chunk* _hit, Text* _score)
 			_ball->Reverse(blocks[i]->GetRect());
 			Mix_PlayChannel(-1, _hit, 0);
 			_score->Increase(4);
+			
 			blocks[i]->SetAlive(false);
 			delete blocks[i];
 			blocks[i] = nullptr;
