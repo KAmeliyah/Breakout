@@ -15,7 +15,8 @@ enum GameState
 	GAME_TITLE,
 	GAME_ACTIVE,
 	GAME_PAUSE,
-	GAME_WIN
+	GAME_WIN,
+	GAME_LOSE
 };
 
 class Game

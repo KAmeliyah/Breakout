@@ -57,8 +57,7 @@
               "RelativeToolTip": "..\\..\\Space-Invaders\\SDL_Project__Template\\Game.cpp",
               "ViewState": "AQIAAEUAAAAAAAAAAAAAAFkAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-07T15:56:12.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-07T15:56:12.211Z"
             },
             {
               "$type": "Document",
@@ -80,7 +79,7 @@
               "RelativeDocumentMoniker": "SDL_Project__Template\\Game.h",
               "ToolTip": "C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Game.h",
               "RelativeToolTip": "SDL_Project__Template\\Game.h",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAADUAAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-07-01T18:15:36.64Z",
               "EditorCaption": ""
@@ -93,7 +92,7 @@
               "RelativeDocumentMoniker": "SDL_Project__Template\\Game.cpp",
               "ToolTip": "C:\\Users\\Asus\\Documents\\GitHub\\Breakout\\SDL_Project__Template\\SDL_Project__Template\\Game.cpp",
               "RelativeToolTip": "SDL_Project__Template\\Game.cpp",
-              "ViewState": "AQIAAH4AAAAAAAAAAAAIwIYAAAAHAAAA",
+              "ViewState": "AQIAAKIAAAAAAAAAAAAIwLkAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-07-01T18:30:59.175Z",
               "EditorCaption": ""
@@ -120,8 +119,7 @@
               "RelativeToolTip": "SDL_Project__Template\\GameLevel.cpp",
               "ViewState": "AQIAAC0AAAAAAAAAAAAAAFgAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-04T19:48:26.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-04T19:48:26.331Z"
             },
             {
               "$type": "Document",
@@ -145,8 +143,7 @@
               "RelativeToolTip": "SDL_Project__Template\\Ball.cpp",
               "ViewState": "AQIAAB4AAAAAAAAAAAAAADYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-03T14:57:33.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-03T14:57:33.249Z"
             }
           ]
         }

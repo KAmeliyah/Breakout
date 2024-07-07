@@ -173,6 +173,8 @@ void Game::Update()
 		if (levels.empty())
 		{
 			std::cout << "You win" << std::endl;
+			//set state to win
+			// click to return to title
 			SetRunning(false);
 
 		}
@@ -180,6 +182,8 @@ void Game::Update()
 		{
 			if (!ball->GetAlive())
 			{
+				//set state to lose
+				// click to return to title
 				SetRunning(false);
 				std::cout << "You lost" << std::endl;
 			}
