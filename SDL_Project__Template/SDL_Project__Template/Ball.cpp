@@ -28,8 +28,6 @@ void Ball::Update(SDL_Renderer* _rend)
 		moveVec.x *= -1;
 	}
 
-	
-
 	dRect.x = pos.x;
 	dRect.y = pos.y;
 }

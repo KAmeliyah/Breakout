@@ -117,6 +117,38 @@ int Game::Init()
 	pauseDRect.w = pauseSRect.w;
 	pauseDRect.h = pauseSRect.h;
 
+	surface = SDL_LoadBMP("./Sprites/Win.bmp");
+	if (surface == nullptr)
+	{
+		std::cout << "Failed to load win screen " << SDL_GetError() << std::endl;
+		return -1;
+	}
+	m_WinScreen = SDL_CreateTextureFromSurface(rend, surface);
+
+	SDL_FreeSurface(surface);
+	SDL_QueryTexture(m_WinScreen, 0, 0, &m_WinSRect.w, &m_WinSRect.h);
+	m_WinSRect.x = 0;
+	m_WinSRect.y = 0;
+
+	m_WinDRect.w = m_WinSRect.w;
+	m_WinDRect.h = m_WinSRect.h;
+
+	surface = SDL_LoadBMP("./Sprites/Lose.bmp");
+	if (surface == nullptr)
+	{
+		std::cout << "Failed to load lose screen " << SDL_GetError() << std::endl;
+		return -1;
+	}
+	m_LoseScreen = SDL_CreateTextureFromSurface(rend, surface);
+
+	SDL_FreeSurface(surface);
+	SDL_QueryTexture(m_LoseScreen, 0, 0, &m_LoseSRect.w, &m_LoseSRect.h);
+	m_LoseSRect.x = 0;
+	m_LoseDRect.y = 0;
+
+	m_LoseDRect.w = m_LoseSRect.w;
+	m_LoseDRect.h = m_LoseSRect.h;
+
 	score = new Text(0, rend, font, 0, 0);
 
 	player = new Paddle("./Sprites/Paddle.bmp",250,675,0,rend);
@@ -145,6 +177,10 @@ void Game::HandleEvents()
 						{
 							
 							state = GAME_ACTIVE;
+						}
+						if (state == GAME_WIN || state == GAME_LOSE)
+						{
+							SetRunning(false);
 						}
 						break;
 
@@ -183,20 +219,19 @@ void Game::Update()
 	{
 		if (levels.empty())
 		{
-			std::cout << "You win" << std::endl;
-			//set state to win
-			// click to return to title
-			SetRunning(false);
+			state = GAME_WIN;
+
+			
 
 		}
 		else
 		{
 			if (!ball->GetAlive())
 			{
-				//set state to lose
-				// click to return to title
-				SetRunning(false);
-				std::cout << "You lost" << std::endl;
+				state = GAME_LOSE;
+
+				
+				
 			}
 			player->Update(rend);
 			ball->Update(rend);
@@ -239,6 +274,14 @@ void Game::Render()
 	else if (state == GAME_PAUSE)
 	{
 		SDL_RenderCopy(rend, pause, NULL, NULL);
+	}
+	else if (state == GAME_WIN)
+	{
+		SDL_RenderCopy(rend, m_WinScreen, NULL, NULL);
+	}
+	else if (state == GAME_LOSE)
+	{
+		SDL_RenderCopy(rend, m_LoseScreen, NULL, NULL);
 	}
 
 	else if (state == GAME_ACTIVE)

@@ -54,6 +54,14 @@ private:
 	SDL_Rect pauseSRect;
 	SDL_Rect pauseDRect;
 
+	SDL_Texture* m_WinScreen;
+	SDL_Rect m_WinSRect;
+	SDL_Rect m_WinDRect;
+
+	SDL_Texture* m_LoseScreen;
+	SDL_Rect m_LoseSRect;
+	SDL_Rect m_LoseDRect;
+
 
 
 public:
