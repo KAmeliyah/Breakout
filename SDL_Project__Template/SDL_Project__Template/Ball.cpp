@@ -19,7 +19,7 @@ void Ball::Update(SDL_Renderer* _rend)
 
 	if (pos.y >= 750)
 	{
-		Reset();
+		RemoveLives();
 
 	}
 
@@ -62,9 +62,17 @@ int Ball::GetLives()
 
 void Ball::Reset()
 {
-	lives -= 1;
+	lives = 3;
 	moveVec.Set(0, -1);
 	pos.Set(250, 625);
 
+}
+
+void Ball::RemoveLives()
+{
+
+	lives -= 1;
+	moveVec.Set(0, -1);
+	pos.Set(250, 625);
 
 }

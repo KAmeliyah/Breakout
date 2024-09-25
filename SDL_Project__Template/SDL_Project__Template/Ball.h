@@ -27,5 +27,7 @@ public:
 	int GetLives();
 
 	void Reset();
+
+	void RemoveLives();
 };
 

@@ -46,20 +46,31 @@ int Game::Init()
 
 	fileNames.push_back("Level1.txt");
 	fileNames.push_back("Level2.txt");
-	fileNames.push_back("test.txt");
-	fileNames.push_back("test2.txt");
+	fileNames.push_back("Level3.txt");
+	fileNames.push_back("Level4.txt");
 
 	GameLevel level1;
-	level1.LoadLevel(fileNames[1]);
+	level1.LoadLevel(fileNames[0]);
 	level1.InitLevel(rend);
-	levels.push_back(level1);
-	
-	GameLevel level2;
-	level2.LoadLevel(fileNames[0]);
-	level2.InitLevel(rend);
-	levels.push_back(level2);
 
-	
+	GameLevel level2;
+	level2.LoadLevel(fileNames[1]);
+	level2.InitLevel(rend);
+
+	GameLevel level3;
+	level3.LoadLevel(fileNames[2]);
+	level3.InitLevel(rend);
+
+	GameLevel level4;
+	level4.LoadLevel(fileNames[3]);
+	level4.InitLevel(rend);
+
+
+	levels.push_back(level4);
+	levels.push_back(level3);
+	levels.push_back(level2);
+	levels.push_back(level1);
+
 	hitSFX = Mix_LoadWAV("./Sounds/hit.wav");
 
 	if (!hitSFX)
