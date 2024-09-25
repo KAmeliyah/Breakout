@@ -41,7 +41,7 @@ public:
 	void Render();
 
 
-	
+
 	void Increase(int _value);
 	void Decrease(int _value);
 

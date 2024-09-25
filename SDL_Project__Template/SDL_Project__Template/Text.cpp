@@ -186,6 +186,8 @@ void Text::Decrease(int _value)
 	changed = true;
 }
 
+
+
 void Text::Render()
 {
 	SDL_RenderCopy(rend, textTexture, NULL, &dest);

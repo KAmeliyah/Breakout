@@ -220,17 +220,13 @@ void Game::Update()
 		if (levels.empty())
 		{
 			state = GAME_WIN;
-
 			
-
 		}
 		else
 		{
 			if (!ball->GetAlive())
 			{
-				state = GAME_LOSE;
-
-				
+				state = GAME_LOSE;	
 				
 			}
 			player->Update(rend);
@@ -258,8 +254,6 @@ void Game::Update()
 		score->Update();
 	}
 	
-
-
 }
 
 void Game::Render()
@@ -296,8 +290,6 @@ void Game::Render()
 	
 		score->Render();
 	}
-
-	
 
 	SDL_RenderPresent(rend);
 }
