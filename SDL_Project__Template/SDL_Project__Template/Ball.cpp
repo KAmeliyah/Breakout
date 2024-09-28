@@ -10,16 +10,18 @@ void Ball::Update(SDL_Renderer* _rend)
 	pos.x += moveVec.x * speed;
 	pos.y += moveVec.y * speed;
 
+	if (pos.y >= 750)
+	{
+		RemoveLives();
+
+	}
+
+
+	//movement vector changes on border collisions
 
 	if (pos.y <= 0)
 	{
 		moveVec.y *= -1;
-
-	}
-
-	if (pos.y >= 750)
-	{
-		RemoveLives();
 
 	}
 
@@ -39,11 +41,10 @@ void Ball::Render(SDL_Renderer* _rend)
 
 void Ball::Reverse(SDL_Rect* coll)
 {
-	//calculate angle of entry to figure out angle of exit and normalise to get the vector
-	//figure out what needs to be reversed
+	//calculate angle of entry to figure out angle of exit 
+	//and normalise to get the new movement vector
 	
 	double reverseAngle = ((pos.x + 12.5) - (coll->x + 50)) / 100;
-
 	
 	moveVec.x = reverseAngle;
 
