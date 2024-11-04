@@ -1,0 +1,76 @@
+﻿  Ball.cpp
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Ball.h(15,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'Ball.cpp')
+  
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Ball.h(16,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'Ball.cpp')
+  
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Ball.cpp(33,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Ball.cpp(34,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Block.cpp
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Block.h(13,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'Block.cpp')
+  
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Block.h(14,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'Block.cpp')
+  
+  Game.cpp
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Block.h(13,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'Game.cpp')
+  
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Block.h(14,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'Game.cpp')
+  
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Ball.h(15,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'Game.cpp')
+  
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Ball.h(16,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'Game.cpp')
+  
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Paddle.h(8,147): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'Game.cpp')
+  
+  GameLevel.cpp
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Block.h(13,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'GameLevel.cpp')
+  
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Block.h(14,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'GameLevel.cpp')
+  
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Ball.h(15,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'GameLevel.cpp')
+  
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Ball.h(16,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'GameLevel.cpp')
+  
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\GameLevel.cpp(85,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\GameLevel.cpp(108,20): warning C4018: '<': signed/unsigned mismatch
+  GameObject.cpp
+  Main.cpp
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Block.h(13,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'Main.cpp')
+  
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Block.h(14,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'Main.cpp')
+  
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Ball.h(15,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'Main.cpp')
+  
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Ball.h(16,16): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'Main.cpp')
+  
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Paddle.h(8,147): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'Main.cpp')
+  
+  Paddle.cpp
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Paddle.h(8,147): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'Paddle.cpp')
+  
+C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\SDL_Project__Template\Paddle.cpp(23,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Text.cpp
+  Vec2D.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 662 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  SDL_Project__Template.vcxproj -> C:\Users\Asus\Documents\GitHub\Breakout\SDL_Project__Template\Release\SDL_Project__Template.exe
